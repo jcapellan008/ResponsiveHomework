@@ -1,0 +1,73 @@
+body {
+    background-color: #dedede;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    color: #333;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+div {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Media Query: Tablet View (min-width: 772px) */
+@media (min-width: 772px) {
+    div {
+        display: inline-block;
+        width: 45%; /* Divs take 45% of the viewport width */
+    }
+
+    img {
+        max-height: 30vh; /* Images are constrained to 30% of the viewport height */
+    }
+}
+
+/* Media Query: Large Screen View (min-width: 998px) */
+@media (min-width: 998px) {
+    div {
+        width: 30%; /* Divs take 30% of the viewport width */
+    }
+
+    img {
+        max-height: unset; /* No additional height constraints */
+    }
+}
